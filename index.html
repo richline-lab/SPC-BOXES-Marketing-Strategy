@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استراتيجية تسويق - SPC BOXES</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            950: '#020617',
+                            900: '#0f172a',
+                            800: '#1e293b',
+                        },
+                        brand: {
+                            emerald: '#10b981',
+                            gold: '#f59e0b',
+                            cyan: '#06b6d4',
+                            blue: '#38bdf8',
+                            purple: '#8b5cf6',
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            font-family: 'Cairo', sans-serif; 
+            background-color: #020617; 
+            color: #f1f5f9; 
+            scroll-behavior: smooth;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(6, 182, 212, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(245, 158, 11, 0.05) 0%, transparent 20%);
+        }
+
+        .glass-panel { 
+            background: rgba(30, 41, 59, 0.4); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            border-radius: 1.5rem;
+        }
+
+        .section-card {
+            transition: all 0.3s ease;
+        }
+        
+        .section-card:hover {
+            border-color: rgba(6, 182, 212, 0.3);
+            background: rgba(30, 41, 59, 0.6);
+            transform: translateY(-5px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .accent-line {
+            height: 4px;
+            width: 60px;
+            background: linear-gradient(90deg, #06b6d4, transparent);
+            border-radius: 2px;
+            margin-top: 0.5rem;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Header Section -->
+    <header class="relative flex flex-col justify-center items-center text-center px-6 overflow-hidden pt-20 pb-10">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-brand-cyan/10 blur-[120px] rounded-full -z-10 animate-pulse-slow"></div>
+        
+        <div class="relative group mb-8 bg-white/5 p-4 rounded-3xl backdrop-blur-sm border border-white/10">
+            <img src="https://i.postimg.cc/Kv7XvNzk/imgi-2-c4427802-1f31-4a85-bc84-9c3bbba5bce2.webp" alt="SPC BOXES Logo" class="relative h-28 w-auto rounded-xl animate-float object-contain">
+        </div>
+        
+        <div class="space-y-4 max-w-4xl relative z-10">
+            <h1 class="text-brand-cyan font-bold text-3xl md:text-5xl mt-4 leading-tight">استراتيجية التسويق الشاملة: SPC BOXES</h1>
+            <p class="text-slate-400 max-w-2xl mx-auto mt-4 text-sm md:text-base">
+                تحليل شامل لنقاط الضعف، خطة تحسين تجربة المستخدم، واستراتيجية إعلانية متكاملة لزيادة المبيعات والوعي بصناديق الشحنات الذكية.
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 max-w-6xl pb-24 space-y-24 mt-8 md:mt-12">
+
+        <!-- Phase 1: Website Improvements -->
+        <section class="reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-black opacity-20 text-brand-cyan">01</span>
+                <div>
+                    <h2 class="text-2xl font-black text-white">نقاط تحتاج تحسين في الموقع</h2>
+                    <div class="accent-line !bg-gradient-to-r !from-brand-cyan !to-transparent"></div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-panel p-6 section-card border-t-4 border-t-red-500">
+                    <div class="text-3xl mb-4">🚀</div>
+                    <h3 class="text-lg font-bold text-white mb-2">سرعة الموقع (Performance)</h3>
+                    <p class="text-slate-400 text-sm">الصفحة الرئيسية بطيئة وبتحتاج JavaScript — ده بيأثر سلبياً على تجربة المستخدم وعلى أرشفة محركات البحث (SEO).</p>
+                </div>
+
+                <div class="glass-panel p-6 section-card border-t-4 border-t-brand-cyan">
+                    <div class="text-3xl mb-4">🎬</div>
+                    <h3 class="text-lg font-bold text-white mb-2">وضوح المنتج</h3>
+                    <p class="text-slate-400 text-sm">المنتج مش واضح بالكامل — محتاجين فيديو توضيحي قصير أو GIF يوضح آلية الاستخدام خطوة بخطوة للعميل.</p>
+                </div>
+
+                <div class="glass-panel p-6 section-card border-t-4 border-t-brand-gold">
+                    <div class="text-3xl mb-4">💰</div>
+                    <h3 class="text-lg font-bold text-white mb-2">إظهار السعر</h3>
+                    <p class="text-slate-400 text-sm">السعر مش ظاهر على الصفحة الرئيسية — الناس بتحتاج تعرف السعر مبدئياً بدون ما تضطر تدخل على صفحة المنتج الداخلي.</p>
+                </div>
+
+                <div class="glass-panel p-6 section-card border-t-4 border-t-brand-emerald">
+                    <div class="text-3xl mb-4">📸</div>
+                    <h3 class="text-lg font-bold text-white mb-2">صور المنتج (Lifestyle)</h3>
+                    <p class="text-slate-400 text-sm">محتاجين صور Lifestyle تظهر المنتج مركّب فعلاً على باب بيت أو فيلا، ليتخيل العميل شكله في واقعه.</p>
+                </div>
+
+                <div class="glass-panel p-6 section-card border-t-4 border-t-brand-purple">
+                    <div class="text-3xl mb-4">⭐</div>
+                    <h3 class="text-lg font-bold text-white mb-2">الدليل الاجتماعي (Social Proof)</h3>
+                    <p class="text-slate-400 text-sm">الدليل الاجتماعي غايب — مفيش مراجعات (Reviews) أو آراء عملاء (Testimonials) واضحة تبني الثقة للمشتري الجديد.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 2: Platforms & Budgets -->
+        <section class="reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-black opacity-20 text-brand-emerald">02</span>
+                <div>
+                    <h2 class="text-2xl font-black text-white">المنصات الإعلانية وتوزيع الميزانية</h2>
+                    <div class="accent-line !bg-gradient-to-r !from-brand-emerald !to-transparent"></div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Snapchat -->
+                <div class="glass-panel p-6 section-card border-t-4 border-t-yellow-400 relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 opacity-5">
+                        <svg class="w-32 h-32 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.06 2.01c-3.11 0-5.63 2.45-5.63 5.46 0 1.25.5 2.43 1.34 3.32-.48.6-1.39 1.13-2.31 1.43-.88.29-1.31 1.05-1.02 1.83.2.53.76.84 1.31.84.18 0 .37-.04.55-.11 1.04-.42 2.15-1.12 3.1-1.95.83.2 1.7.31 2.58.31s1.75-.11 2.58-.31c.95.83 2.06 1.53 3.1 1.95.18.07.37.11.55.11.55 0 1.11-.31 1.31-.84.29-.78-.14-1.54-1.02-1.83-.92-.3-1.83-.83-2.31-1.43.84-.89 1.34-2.07 1.34-3.32 0-3.01-2.52-5.46-5.63-5.46zm0 16.71c-1.35 0-2.61-.41-3.66-1.11-.31 1.11-1.11 1.83-2.14 2.14-.82.25-1.28 1.11-1.03 1.93.2.65.81 1.07 1.48 1.07.15 0 .31-.02.46-.07 1.5-.47 2.8-1.4 3.73-2.65.94.4 1.98.62 3.06.62s2.12-.22 3.06-.62c.93 1.25 2.23 2.18 3.73 2.65.15.05.31.07.46.07.67 0 1.28-.42 1.48-1.07.25-.82-.21-1.68-1.03-1.93-1.03-.31-1.83-1.03-2.14-2.14-1.05.7-2.31 1.11-3.66 1.11z"/></svg>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-white z-10">Snapchat</h3>
+                        <span class="text-2xl font-black text-yellow-400">35%</span>
+                    </div>
+                    <p class="text-sm text-slate-300 relative z-10">الأكثر استخداماً في السعودية، ويستهدف الفئة اللي بتتسوق أونلاين كتير.</p>
+                </div>
+
+                <!-- Instagram / Meta -->
+                <div class="glass-panel p-6 section-card border-t-4 border-t-pink-500 relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 opacity-5">
+                        <svg class="w-32 h-32 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/></svg>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-white z-10">Meta / IG</h3>
+                        <span class="text-2xl font-black text-pink-500">30%</span>
+                    </div>
+                    <p class="text-sm text-slate-300 relative z-10">للاستهداف الديموغرافي الدقيق وإعادة الاستهداف (Retargeting).</p>
+                </div>
+
+                <!-- TikTok -->
+                <div class="glass-panel p-6 section-card border-t-4 border-t-white relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 opacity-5">
+                        <svg class="w-32 h-32 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-white z-10">TikTok</h3>
+                        <span class="text-2xl font-black text-white">20%</span>
+                    </div>
+                    <p class="text-sm text-slate-300 relative z-10">المنتج بصري وعملي — فيديو استخدامه هيشتغل ممتاز وينتشر بسرعة.</p>
+                </div>
+
+                <!-- Google Ads -->
+                <div class="glass-panel p-6 section-card border-t-4 border-t-blue-500 relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 opacity-5">
+                        <svg class="w-32 h-32 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"/></svg>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-white z-10">Google Ads</h3>
+                        <span class="text-2xl font-black text-blue-500">15%</span>
+                    </div>
+                    <p class="text-sm text-slate-300 relative z-10">لاستهداف الناس اللي بتدور على حل لمشكلة الشحنات وضياعها بشكل مباشر (Search Intent).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Insights & Weaknesses -->
+        <section class="reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-black opacity-20 text-brand-gold">03</span>
+                <div>
+                    <h2 class="text-2xl font-black text-white">نقاط الضعف والتحديات الرئيسية</h2>
+                    <div class="accent-line !bg-gradient-to-r !from-brand-gold !to-transparent"></div>
+                </div>
+            </div>
+
+            <!-- Priority Banner -->
+            <div class="bg-gradient-to-r from-brand-gold/20 to-brand-gold/5 border border-brand-gold/30 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 shadow-lg shadow-brand-gold/10">
+                <div class="bg-brand-gold/20 p-4 rounded-full text-4xl">⚠️</div>
+                <div>
+                    <h3 class="text-brand-gold font-black text-xl mb-2">الأولوية الأولى قبل أي حملة إعلانية!</h3>
+                    <p class="text-white text-base md:text-lg leading-relaxed">
+                        نحتاج إلى فيديو قصير <span class="font-bold text-brand-gold">(30-60 ثانية)</span> يوضح المشكلة والحل. هذا الفيديو سيكون حجر الأساس والمحتوى الرئيسي الذي سيعمل على كافة المنصات الإعلانية بنجاح.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                <div class="glass-panel p-6 border-r-4 border-r-brand-gold flex gap-4">
+                    <div class="text-2xl">🎓</div>
+                    <div>
+                        <h4 class="text-white font-bold mb-2">حاجة المنتج للتعليم</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">المنتج جديد كلياً، والناس لا تزال غير مدركة لوجود هذه المشكلة والحل معاً. نحتاج إلى تثقيف العميل المستهدف أولاً.</p>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 border-r-4 border-r-brand-gold flex gap-4">
+                    <div class="text-2xl">🌱</div>
+                    <div>
+                        <h4 class="text-white font-bold mb-2">السوق غير ناضج</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">التحدي الأكبر ليس المنافسة، بل التحدي يكمن في <strong class="text-brand-gold">خلق الطلب</strong> من الأساس وتعريف السوق بالمنتج.</p>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 border-r-4 border-r-brand-gold flex gap-4">
+                    <div class="text-2xl">🏷️</div>
+                    <div>
+                        <h4 class="text-white font-bold mb-2">عدم وضوح السعر</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">عدم عرض السعر بشفافية منذ البداية قد يعيق أو يؤخر قرار الشراء لدى العميل المحتمل عند التصفح.</p>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 border-r-4 border-r-brand-gold flex gap-4">
+                    <div class="text-2xl">🎯</div>
+                    <div>
+                        <h4 class="text-white font-bold mb-2">توسيع الشريحة المستهدفة</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">الاعتماد حالياً على شريحة "المتسوق أونلاين الثقيل" فقط. يجب التوسع لاستهداف <strong class="text-brand-gold">الشركات الصغيرة، العمارات، والإيجارات</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campaign & Content Ideas -->
+        <section class="reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-black opacity-20 text-brand-blue">04</span>
+                <div>
+                    <h2 class="text-2xl font-black text-white">أفكار محتوى وحملات مقترحة</h2>
+                    <div class="accent-line !bg-gradient-to-r !from-brand-blue !to-transparent"></div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Video Ideas -->
+                <div class="glass-panel p-8 border border-brand-cyan/20">
+                    <h4 class="text-brand-cyan font-bold mb-6 flex items-center gap-2 text-xl">
+                        <span>🎬</span> أفكار الفيديوهات (الأقوى)
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-cyan mt-1">▪</span>
+                            <p><strong>"شوف اللي حصل لشحنتي":</strong> فيديو درامي لشخص راجع البيت ويجد شحنته مسروقة أو تالفة، والحل يكون في الصندوق.</p>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-cyan mt-1">▪</span>
+                            <p><strong>قبل وبعد:</strong> مقارنة بين فوضى الشحنات المرمية عند الباب مقابل نظام SPC المرتب والموثق.</p>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-cyan mt-1">▪</span>
+                            <p><strong>POV المندوب:</strong> كاميرا من منظور مندوب التوصيل وهو يضع الشحنة في الصندوق بسهولة وأمان.</p>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-cyan mt-1">▪</span>
+                            <p><strong>"أنا مسافر والشحنة وصلت":</strong> سيناريو لشخص خارج البلاد ويتابع إشعارات التوثيق والاستلام على هاتفه.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Influencers Ideas -->
+                <div class="glass-panel p-8 border border-brand-purple/20">
+                    <h4 class="text-brand-purple font-bold mb-6 flex items-center gap-2 text-xl">
+                        <span>🤝</span> أفكار المؤثرين (Influencers)
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-purple mt-1">▪</span>
+                            <p><strong>Unboxing معكوس:</strong> المؤثر يقوم بتصوير استلامه لمنتج ولكن من داخل صندوق SPC بدلاً من فتحه من المندوب مباشرة.</p>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-purple mt-1">▪</span>
+                            <p><strong>تحدي التوثيق:</strong> المؤثر يطلب من متابعيه مشاركة أسوأ تجاربهم أو مقاطع فيديو لمشاكل واجهوها مع الشحنات المتروكة.</p>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-purple mt-1">▪</span>
+                            <p><strong>مؤثرين Tech و Smart Home:</strong> استهداف المؤثرين في مجال التقنية والمنازل الذكية لأن المنتج يتناسب مع جمهورهم جداً.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Creative Ideas -->
+                <div class="glass-panel p-8 border border-brand-gold/20">
+                    <h4 class="text-brand-gold font-bold mb-6 flex items-center gap-2 text-xl">
+                        <span>💡</span> أفكار إبداعية وتوسعية
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-gold mt-1">▪</span>
+                            <p><strong>ضمان "لو اتسرقت شحنتك":</strong> لو المنتج يقدم تعويضاً أو ضماناً، ستكون هذه نقطة بيع قوية جداً تقضي على التردد.</p>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-gold mt-1">▪</span>
+                            <p><strong>استهداف أصحاب العقارات:</strong> بيع الصندوق كـ Feature إضافية لرفع قيمة الشقق والفلل الجديدة.</p>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-gold mt-1">▪</span>
+                            <p><strong>شراكة مع شركات الشحن:</strong> تعاون مع شركات كبرى مثل (Aramex، SMSA) ليوصوا بالصندوق كحل لعملائهم الدائمين.</p>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-gold mt-1">▪</span>
+                            <p><strong>B2B للمجمعات:</strong> صفقات بيع بالجملة للكمبوندات والمجمعات السكنية المغلقة.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Direct Ads -->
+                <div class="glass-panel p-8 border border-brand-emerald/20">
+                    <h4 class="text-brand-emerald font-bold mb-6 flex items-center gap-2 text-xl">
+                        <span>📣</span> أفكار إعلانات مباشرة (Direct Ads)
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-emerald mt-1">▪</span>
+                            <p><strong>سؤال تفاعلي:</strong> إعلان بعبارة "كم شحنة ضيّعت السنة دي؟" — سؤال يلمس ألم الجمهور مباشرة.</p>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-emerald mt-1">▪</span>
+                            <p><strong>حملات Retargeting:</strong> إطلاق عرض خاص؛ كل زائر للموقع تلاحقه إعلانات بخصم (مثال: 15%) لتحفيز الشراء.</p>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm bg-navy-900/40 p-3 rounded-lg border border-white/5">
+                            <span class="text-brand-emerald mt-1">▪</span>
+                            <p><strong>Google Search:</strong> استهداف كلمات مفتاحية بنية الشراء العالية مثل: "حماية شحنات، صندوق شحن ذكي، استلام طرود".</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-navy-900 border-t border-white/5 py-16 px-6 text-center">
+        <div class="container mx-auto space-y-8">
+            <img src="https://i.ibb.co/XfxF1p9p/file.jpg" alt="Richline Logo" class="h-20 w-auto mx-auto rounded-2xl opacity-70">
+            <p class="text-slate-500 text-sm max-w-lg mx-auto leading-relaxed">
+                نحن نؤمن أن النجاح ليس صدفة، بل هو نتيجة استراتيجية دقيقة، محتوى مبدع، وتنفيذ احترافي.
+            </p>
+            <div class="pt-8 border-t border-white/5">
+                <p class="text-[10px] text-slate-700 font-bold tracking-[0.4em] uppercase">
+                    STRATEGY PLAN BY <span class="text-brand-cyan">RICHLINE AGENCY</span> &copy; 2024
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observerOptions = { threshold: 0.15 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
